@@ -65,8 +65,8 @@ export default class App {
     this.gui = new dat.GUI();
     
     this.gui.add(zoomBlurFilter.uniforms.strength, 'value', 0, 1).name('strength').step(0.001);
-    this.gui.add(zoomBlurFilter.uniforms.center.value, 'x', 0, 1).name('strength').step(0.001);
-    this.gui.add(zoomBlurFilter.uniforms.center.value, 'y', 0, 1).name('strength').step(0.001);
+    this.gui.add(zoomBlurFilter.uniforms.center.value, 'x', 0, 1).name('center x').step(0.001);
+    this.gui.add(zoomBlurFilter.uniforms.center.value, 'y', 0, 1).name('center y').step(0.001);
 
     this.scene.filters = [zoomBlurFilter];
 
